@@ -24,12 +24,7 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("online.andresamurai.gestaoprodutos"))
                 .paths(PathSelectors.regex("/api.*"))
-                .build()
-                .apiInfo(metaInfo());
+                .build();
     }
 
-    private ApiInfo metaInfo(){
-        ApiInfo apiInfo = new ApiInfo("Aula 2 - Sistemas Distribuídos", "Explicando HTTP methods e HTTP status code", "1.0", "Terms of Service", new Contact("André Luiz Vicente Silva", "https://github.com/andrelvicent", "andre.vicente@zup.com.br"), "Apache License Version 2.0",  "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>());
-        return apiInfo;
-    }
 }
